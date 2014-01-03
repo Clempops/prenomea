@@ -1,0 +1,4 @@
+prenomea_site:
+    resource: "@PrenomeaSiteBundle/Resources/config/routing.yml"
+    prefix:   /
+

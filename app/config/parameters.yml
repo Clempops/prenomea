@@ -1,0 +1,14 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_driver: pdo_mysql
+    database_host: mysql2.alwaysdata.com
+    database_port: 3306
+    database_name: prenomea_bdd
+    database_user: prenomea
+    database_password: ccp67nul
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_user: null
+    mailer_password: null
+    locale: en
+    secret: 610d4453fb01d29cc4b3f3129c948eeab3f775f1

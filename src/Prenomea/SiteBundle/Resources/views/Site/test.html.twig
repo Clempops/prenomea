@@ -1,0 +1,16 @@
+{% extends "PrenomeaSiteBundle::layout.html.twig" %}
+
+{% block title %}
+Accueil - {{ parent() }}
+{% endblock %}
+
+ 
+
+{% block PrenomeaBody %}
+
+foreach($listePrenom as $prenom)
+{
+ 	echo $prenom.prenom;
+}
+
+{% endblock %}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>{% block title %}Prenomea{% endblock %}</title>
+	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+	{% stylesheets
+      '@PrenomeaSiteBundle/Resources/public/css/style.css'
+      filter="cssrewrite"
+    %}
+       <link rel="stylesheet" href="{{ asset_url }}" />
+    {% endstylesheets %}
+    <link rel="stylesheet" href="{{ asset("bundles/PrenomeaSite/css/style.css") }}" />
+</head>
+
+
+<body>
+	{% block SiteLayout %}
+	{% endblock %}
+</body>
+
+<script src="../js/jquery.js"></script> 
+<script src="../bootstrap/js/bootstrap.min.js "></script>
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+
+</html>
+

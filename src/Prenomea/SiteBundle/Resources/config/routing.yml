@@ -1,0 +1,15 @@
+PrenomeaSite_formulaire:
+    path:      /formulaire
+    defaults:  { _controller: PrenomeaSiteBundle:Site:formulaire }
+PrenomeaSite_accueil:
+    path:      /{id_etymology}/{id_prenom}
+    defaults:  { _controller: PrenomeaSiteBundle:Site:accueil , id_etymology:0 ,id_prenom:0}
+PrenomeaSite_afficher:
+    path:      /afficher/{id_etymology}/{id_prenom}
+    defaults:  { _controller: PrenomeaSiteBundle:Site:afficher , id_etymology:0, id_prenom:0 }
+PrenomeaSite_etymology:
+    path:      /etymology/{id_etymology}
+    defaults:  { _controller: PrenomeaSiteBundle:Site:etymology , id_etymology:0 }
+PrenomeaSite_chart:
+    path:      /chart/{id_prenom}
+    defaults:  { _controller: PrenomeaSiteBundle:Site:chart }

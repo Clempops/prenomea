@@ -1,0 +1,85 @@
+body {
+            padding-top: 60px;
+            background-color: #444444;
+            color: white;
+
+        }
+.navbar {
+    border-bottom: 4px #999999 solid;
+    font-size: 40px;
+    opacity: 0.9;
+}
+.nav li{
+   border-right: 4px #999999 solid;
+}
+#a {
+    background-color: #eb5b4c;
+}
+#b {
+    background-color: #52b9e9;
+
+}
+#c {
+    background-color: #6b476b;
+}
+#d {
+     background-color: #38763e;
+}
+#e {
+    background-color: #f4b844;
+}
+#f {
+    background-color: #fa5b30;
+}
+ #a, #b, #c, #d, #e, #f {
+    margin-top: 80px;
+    border: 4px white solid;
+    border-radius: 4px;
+    min-height: 240px;
+    padding : 15px;
+    padding-left: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    
+ }
+ 
+ #d, #e, #f {
+    margin-top: 25px;
+ }
+
+#logo {
+    float: right;
+}
+
+#contenu_a li {
+    list-style-type: none;
+}
+
+#contenu_a {
+    padding-left : 30px;
+}
+
+#diagbaton {
+    text-align: center;
+
+}
+
+.modal-body {
+    color: black;
+    font-size: 20px;
+    
+}
+
+.close {
+    opacity:1;
+}
+
+.modal-backdrop.fade.in, .modal
+    {
+        opacity: 0.7; 
+        z-index: 0;
+    }
+
+#email {
+        font-style: italic;
+    }

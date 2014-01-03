@@ -1,0 +1,47 @@
+{% extends "PrenomeaSiteBundle::layout.html.twig" %}
+
+{% block title %}
+Accueil - {{ parent() }}
+{% endblock %}
+
+
+
+{% block PrenomeaBody %}
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+     {% include "PrenomeaSiteBundle:Site:barre_navi.html.twig" %}
+</div>
+<div class="container-fluid">
+
+
+
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div id="c" class="span4">
+                {{ render(controller("PrenomeaSiteBundle:Site:afficher" , {'id_etymology': id_etymology ,'id_prenom' : id_prenom})) }}
+            </div>
+            <div id="d" class="span4">
+                {{ render(controller("PrenomeaSiteBundle:Site:formulaire")) }}
+            </div>
+            <div id="f" class="span4">
+                {{ render(controller("PrenomeaSiteBundle:Site:etymology", {'id_etymology': id_etymology  })) }}
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div id="a" class="span4">
+                {% include "PrenomeaSiteBundle:Site:top_prenom.html.twig" %}
+            </div>
+            <div id="e" class="span4">
+                {{ render(controller("PrenomeaSiteBundle:Site:chart", {'id_prenom' : id_prenom})) }}
+            </div>
+            <div id="b" class="span4">
+                <h4>Naissances à Strasbourg</h4>
+                <a id="diagbaton"><img src="{{ asset('images/diagbaton.jpeg') }}" alt="" /></a>    
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
